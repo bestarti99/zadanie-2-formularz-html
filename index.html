@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <header>
+        <h1>Uniwersytet Myślących Inaczej</h1>
+        <p>Formulrz zapisów na szkolenie - "Nic nie robić, nie mieć zmartwień..."</p>
+    </header>
+    <section>
+    <!--  utworzenie fomularza, skorzystanie z przesyłania maila z danymi za pomocą formspree.io -->
+    <form action="https://formspree.io/bestarti@interia.pl" method="POST">
+
+        <!--  pole tekstowe Imię -->
+        <label for="name">Imię: </label>
+        <input type="text" name="name" id="name" /><br>
+
+        <!--  pole tekstowe Nazwisko -->
+        <label for="surname">Nazwisko: </label>
+        <input type="text" name="surname" id="surname" /><br>
+
+        <!--  pole numeryczne Telefon -->
+        <label for="tel">Telefon: </label>
+        <input type="tel" name="tel" id="tel" /><br>
+
+        <!--   lista rozwijana z miastami     -->
+        <label for="city">Miasto: </label>
+        <select name="city" id="city" class="city"> 
+            <option value="Krakow">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdansk">Gdańsk</option>
+        </select><br>
+
+        <!--  wybór płci radio-button  -->
+        <label for="gender">Płeć: </label>
+        <input type="radio" name="gender" value="male"> Mężczyzna<br>
+        <input type="radio" name="gender" value="female"> Kobieta<br>
+        <input type="radio" name="gender" value="other"> Inna <br><br>
+
+        <!--  zgoda na przetwarzanie danych  - checkbox      -->
+        <input type="checkbox" value="zgoda" name="Zgoda">Wyrażam zgodę na sprzedaż moich danych osobowych <br><br>
+
+        <!--   Wiadomość - textarea     <-->
+        <label for="message"></label>Wiadomość dla Pani Basi z dziekanatu:<br>
+        <textarea name="wiadomosc" id="message" cols="50" rows="6"></textarea><br>
+        
+        <input type="submit" value="Prześlij">
+    </form>
+    <!--  koniec formularza  -->
+    </section>
+    
+    <footer>
+       <br>
+        <div>&copy Wszelkie prawa i obowiązki zastrzeżone</div>
+    </footer>
+</body>
+
+</html>
