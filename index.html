@@ -16,50 +16,52 @@
             <p>Formularz zapisów na szkolenie - "Nic nie robić, nie mieć zmartwień..."</p>
         </header>
         <section>
-        <!--  utworzenie fomularza, skorzystanie z przesyłania maila z danymi za pomocą formspree.io -->
-        <form action="https://formspree.io/bestarti@interia.pl" method="POST">
-        
-            <!--  pole tekstowe Imię -->
-            <label for="name">Imię: </label>
-            <input type="text" name="name" id="name" />
-        
-            <!--  pole tekstowe Nazwisko -->
-            <label for="surname">Nazwisko: </label>
-            <input type="text" name="surname" id="surname" />
-        
-            <!--  pole numeryczne Telefon -->
-            <label for="tel">Telefon: </label>
-            <input type="tel" name="tel" id="tel" /><br>
-        
-            <!--   lista rozwijana z miastami     -->
-            <label for="city">Miasto: </label>
-            <select name="city" id="city" class="city"> 
-                <option value="Krakow">Kraków</option>
-                <option value="Warszawa">Warszawa</option>
-                <option value="Gdansk">Gdańsk</option>
-            </select><br>
-        
-            <!--  wybór płci radio-button  -->
-            <label for="gender">Płeć: </label>
-            <input type="radio" name="gender" value="male"> Mężczyzna<br>
-            <input type="radio" name="gender" value="female"> Kobieta<br>
-            <input type="radio" name="gender" value="other"> Inna <br><br>
-        
-            <!--  zgoda na przetwarzanie danych  - checkbox      -->
-            <input type="checkbox" value="zgoda" name="Zgoda">Wyrażam zgodę na sprzedaż moich danych osobowych <br><br>
-        
-            <!--   Wiadomość - textarea     <-->
-            <label for="message"></label>Wiadomość dla Pani Basi z dziekanatu:<br>
-            <textarea name="wiadomosc" maxlength="1200"></textarea><br>
-            
-            <input type="submit" id="submit" value="Zgłoś się jak najszybciej!">
-        </form>
-        <!--  koniec formularza  -->
+            <!--  utworzenie fomularza, skorzystanie z przesyłania maila z danymi za pomocą formspree.io -->
+            <form action="https://formspree.io/bestarti@interia.pl" method="POST">
+
+                <!--  pole tekstowe Imię -->
+                <label for="name">Imię: </label>
+                <input type="text" name="Imie" id="name" />
+
+                <!--  pole tekstowe Nazwisko -->
+                <label for="surname">Nazwisko: </label>
+                <input type="text" name="Nazwisko" id="surname" />
+
+                <!--  pole numeryczne Telefon -->
+                <label for="tel">Telefon: </label>
+                <input type="tel" name="Telefon" id="tel" /><br>
+
+                <!--   lista rozwijana z miastami     -->
+                <label for="city">Miasto: </label>
+                <select name="Miasto" id="city" class="city"> 
+                    <option value="Krakow">Kraków</option>
+                    <option value="Warszawa">Warszawa</option>
+                    <option value="Gdansk">Gdańsk</option>
+                </select><br>
+
+                <!--  wybór płci radio-button  -->
+                <p>Płeć: 
+                    <input type="radio" name="Plec" value="male"> Mężczyzna
+                    <input type="radio" name="Plec" value="female"> Kobieta
+                    <input type="radio" name="Plec" value="other"> Inna 
+                </p>
+
+                <!--  zgoda na przetwarzanie danych  - checkbox      -->
+                <input type="checkbox" value="zgoda" name="Zgoda">  Wyrażam zgodę na sprzedaż moich danych osobowych 
+
+                <!--   Wiadomość - textarea     <-->
+                <p>Wiadomość dla Pani Basi z dziekanatu: </p>
+                <textarea name="Wiadomosc" id="message" maxlength="1200"></textarea>
+
+                <!--  Przycisk potwierdzający wypełnienie formularza i wysyłający zgłoszenie na skrzynkę mailową -->
+                <input type="submit" id="submit" value="Zgłoś się jak najszybciej!">
+            </form>
+            <!--  koniec formularza  -->
         </section>
-        
+
         <footer>
-           <br>
-            <div>&copy Wszelkie prawa i obowiązki zastrzeżone</div>
+            <br>
+            <div id="footer">&copy; Wszelkie prawa i obowiązki zastrzeżone</div>
         </footer>
     </div>
 </body>
