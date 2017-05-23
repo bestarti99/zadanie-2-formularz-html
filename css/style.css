@@ -47,11 +47,30 @@ input[type=tel]
 }
 
 
-#submit {
+textarea {
+        width: 800px;    
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+input[type=submit] 
+{
+    width: 800px;    
+    margin-top: 15px;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    padding: 10px 30px;
+    padding: 10px;
     color: black;
     background-color: darkorchid;
     text-decoration-style: dashed;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;   
+    letter-spacing: 2px;
+    font-weight: bold;
+
 }
+
