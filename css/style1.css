@@ -1,4 +1,5 @@
 /* ustalenie czcionkki i tła dla całego formularza */
+
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -7,7 +8,9 @@ body {
     color: white;
 }
 
+
 /* ustawienie parametrów pola formularza  */
+
 #container {
     background-color: #213b50;
     width: 700px;
@@ -19,7 +22,9 @@ body {
     box-shadow: 3px 3px 30px 5px rgba(120, 54, 120, 0.7);
 }
 
+
 /* Napisy w nagłówku */
+
 h1 {
     text-transform: inherit;
     font-size: 36px;
@@ -27,18 +32,17 @@ h1 {
     text-align: center;
 }
 
-h1 + p {
+h1+p {
     font-size: 22px;
     text-align: center;
     font-weight: bold;
 }
 
-
-input[type]  {
+input[type] {
     background-color: #2b4a64;
     margin-bottom: 15px;
     width: 700px;
-    }
+}
 
 input[type]:focus {
     background-color: #4e708c;
@@ -46,45 +50,78 @@ input[type]:focus {
     color: white;
     margin-bottom: 15px;
     width: 700px;
-    }
+}
 
 input[type="radio"],
-input[type="checkbox"]
-{
+input[type="checkbox"] {
     background-color: #2b4a64;
     margin-bottom: 15px;
     width: auto;
-    }
+}
 
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
     background-color: #4e708c;
     border: 5px solid #fff;
     color: white;
-    }
+    width: auto;
+}
 
+input[type="submit"] {
+    background-color: #2b4a64;
+    margin-bottom: 15px;
+    width: 700px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: white;
+}
 
+input[type="submit"]:focus {
+    background-color: #4e708c;
+    border: 5px solid #fff;
+    color: white;
+    margin-bottom: 15px;
+    width: 700px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+select {
+    background-color: #2b4a64;
+    margin-bottom: 15px;
+    width: 700px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #efefef;
+}
+
+select:focus {
+    background-color: #4e708c;
+    border: 5px solid #fff;
+    margin-bottom: 15px;
+    width: 700px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
 
 textarea {
     background-color: #2b4a64;
     margin-bottom: 15px;
     width: 700px;
-    }
+}
 
 textarea:focus {
     background-color: #4e708c;
     border: 5px solid #fff;
     margin-bottom: 15px;
-    width: 700px;
-    }
+}
+
 
 /* Copyright */
+
 #footer {
     color: #666;
     text-align: center;
     font-size: 15px;
 }
-
-
-
-
