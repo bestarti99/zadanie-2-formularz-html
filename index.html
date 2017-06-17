@@ -6,16 +6,15 @@
     <title>Formularz</title>
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-<!--    <link rel="stylesheet" href="css/style.css">  -->
-    <link rel="stylesheet" href="css/style1.css">
+    <!--    <link rel="stylesheet" href="css/style.css">  -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div id="container">
         <header>
             <h1>Uniwersytet Myślących Inaczej</h1>
-            <p>Formularz zapisów na szkolenie: <br>
-             "Nic nie robić, nie mieć zmartwień..."</p>
+            <p>Formularz zapisów na szkolenie: <br> "Nic nie robić, nie mieć zmartwień..."</p>
         </header>
         <section>
             <!--  utworzenie fomularza, skorzystanie z przesyłania maila z danymi za pomocą formspree.io -->
@@ -42,18 +41,24 @@
                 </select><br>
 
                 <!--  wybór płci radio-button  -->
-                <p>Płeć: 
-                    <input type="radio" name="Plec" value="Facet"> Mężczyzna
-                    <input type="radio" name="Plec" value="Baba"> Kobieta
-                    <input type="radio" name="Plec" value="Nieokreslona"> Inna 
+                <p>Płeć:
+                    <label for="man"></label>
+                    <input type="radio" name="Plec" id="man" value="Facet"> Mężczyzna
+                    <label for="woman"></label>
+                    <input type="radio" name="Plec" id="woman" value="Baba"> Kobieta
+                    <label for="other"></label>
+                    <input type="radio" name="Plec" id="other" value="Nieokreslona"> Inna
                 </p>
 
                 <!--  zgoda na przetwarzanie danych  - checkbox      -->
-                <input type="checkbox" value="Zgoda_wyrazona" name="Zgoda_wyrazona">  Wyrażam zgodę na sprzedaż moich danych osobowych 
+                <p><label for="agreement"></label>
+                    <input type="checkbox" value="Zgoda_wyrazona" id="agreement" name="Zgoda_wyrazona"> Wyrażam zgodę na sprzedaż moich danych osobowych </p>
 
                 <!--   Wiadomość - textarea     <-->
-                <p>Wiadomość dla Pani Basi z dziekanatu: </p>
-                <textarea name="Wiadomosc" id="message" maxlength="1200"></textarea>
+                <p>
+                    <label for="message">Wiadomość dla Pani Basi z dziekanatu: </label>
+                    <textarea name="Wiadomosc" id="message" maxlength="1200"></textarea>
+                </p>
 
                 <!--  Przycisk potwierdzający wypełnienie formularza i wysyłający zgłoszenie na skrzynkę mailową -->
                 <input type="submit" id="submit" value="Zgłoś się jak najszybciej!">

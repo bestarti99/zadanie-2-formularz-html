@@ -67,7 +67,7 @@ input[type=radio]
 /* checbox */
 input[type=checkbox]
 {
-    margin-bottom: 20px;    
+    margin-bottom: 20px; 
 }
 
 /* pole wiadomości */
@@ -78,6 +78,8 @@ textarea {
     border-radius: 5px;
     padding: 10px;
     box-sizing: border-box;
+    display: inline-block;
+
 }
 
 /* Przycisk potwierdzający wypełnienie formularza i wysyłający zgłoszenie na skrzynkę mailową */
